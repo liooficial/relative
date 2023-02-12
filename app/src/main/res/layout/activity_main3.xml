@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+    </TextView>
+    <Button
+        android:id="@+id/centado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="centro"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15px"
+        ></Button>
+    <Button
+        android:id="@+id/lcentado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lcentro"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/centado"
+        android:layout_alignBaseline="@+id/centado"
+        ></Button>
+    <Button
+        android:id="@+id/rcentado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ri centro"
+        android:layout_toRightOf="@+id/centado"
+        android:layout_alignBaseline="@+id/centado"
+        android:layout_centerVertical="true"
+        >
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="casi centro"
+        android:layout_above="@+id/centado"
+        android:layout_centerHorizontal="true">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="casi centro abajo"
+        android:layout_below="@+id/centado"
+        android:layout_centerHorizontal="true">
+
+    </Button>
+</RelativeLayout>
